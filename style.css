@@ -1,0 +1,266 @@
+
+/* *{
+    font-family: , ;
+} */
+
+ /*Footer*/
+
+#nosotros{
+    padding: 80px 0 0 0;
+}
+
+.text{
+  background-color: #783AC1;
+  align-self: start;
+  color: yellow;
+  font-size: 20px;
+}
+
+#productos{
+    padding: 80px 0 0 0;
+}
+
+#testimonios{    
+    padding: 50px 0;
+}
+/* navbar */
+.navbar{
+    background-color: #783AC1;
+}
+
+.navbar a {
+    font-weight: 600;
+    font-size: 20px;
+    color: yellow;
+}
+
+/* imagen de inicio */
+.background-img {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.50),rgba(0, 0, 0, 0.50)) ,url(./img/carruselMascotijos.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 114vh;
+    margin-top: 56px;
+}
+
+.title{
+    text-align: center;
+    color: white;
+    padding-top: 10%;
+}
+
+.description{
+    text-align: center;
+    color: whitesmoke;
+    padding-top: 2%;
+    font-weight: 400;
+}
+
+  /* carrusel de imagenes */
+.body-scroll {
+    display: grid;
+    min-block-size: 50vh;
+    place-content: center;
+    padding: 80px 0 0 0;
+  }
+
+.scroller{
+    padding: 0px 0 0 0;
+  }
+
+.scroller img {
+    width: 10vw;
+    height: auto;
+    margin: auto;
+    overflow: hidden;
+  }
+  
+  .scroller__inner {
+    padding-block: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+  .scroller[data-animated="true"] {
+    overflow: hidden;
+    -webkit-mask: linear-gradient(
+      90deg,
+      transparent,
+      white 20%,
+      white 80%,
+      transparent
+    );
+    mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+  }
+  
+  .scroller[data-animated="true"] .scroller__inner {
+    width: max-content;
+    flex-wrap: nowrap;
+    animation: scroll var(--_animation-duration, 40s)
+      var(--_animation-direction, forwards) linear infinite;
+  }
+  
+  .scroller[data-direction="right"] {
+    --_animation-direction: reverse;
+  }
+  
+  .scroller[data-speed="fast"] {
+    --_animation-duration: 20s;
+  }
+  
+  @keyframes scroll {
+    to {
+      transform: translate(calc(-50% - 0.5rem));
+    }
+  }
+
+.testimonios {
+    padding: 80px 0;
+}
+
+.section-icons{
+    padding: 80px 0 0 0;
+}
+
+.box-icons i {
+    font-size: 40px;
+}
+
+.box-icons h3 {
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.product {
+    padding: 80px 0;
+}
+
+.card{
+    background-color: #783AC1;
+    align-items: center;
+}
+
+.card-title{
+    text-align: center;
+    color: yellow;
+}
+
+.card-text{
+    text-align: center;
+    color: white;
+}
+
+.card img {
+    padding: 15px 0 0 0;
+    width: 150px;
+    height: 150px;
+}
+
+.banner {
+    padding: 50px 0 0 0;
+    margin-bottom: 80px;
+    background-color: #AEE5DF;
+}
+
+.banner h2 {
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.banner img {
+    width: 300px;
+}
+
+/* responsive */
+@media(max-width: 767px){
+    .carousel-item{
+        min-height: 500px;
+    }
+
+    .carousel-item img {
+        height: 500px;
+    }
+
+    .carousel-caption {
+        bottom: 30px;
+    }
+
+    .carousel-caption h5 {
+        font-size: 50px;
+        margin-top: 0;
+    }
+
+    .carousel-caption p {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .services {
+        padding: 30px 0;
+    }
+
+    .product{
+        padding: 30px 0 0 0;
+    }
+
+    .banner{
+        margin-bottom: 30px;
+    }
+
+}
+
+
+/* Estilos del scrollbar*/
+body {
+    --sb-track-color: #232E33;
+    --sb-thumb-color: #eedc13;
+    --sb-size: 15px;
+  }
+  
+  body::-webkit-scrollbar {
+    width: var(--sb-size)
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: var(--sb-track-color);
+    border-radius: 1px;
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background: var(--sb-thumb-color);
+    border-radius: 1px;
+    border: 1px solid #cc01ff;
+  }
+  
+  @supports not selector(::-webkit-scrollbar) {
+    body {
+      scrollbar-color: var(--sb-thumb-color)
+                       var(--sb-track-color);
+    }
+  }
+
+/* boton flotante de whatsapp */
+  .float{
+    position: fixed;
+    width: 58px;
+    height: 58px;
+    background-color: #25d366;
+    bottom: 40px;
+    right: 40px;
+    color: #fff;
+    border-radius: 12%;
+    text-align: center;
+    box-shadow: 2px 2px 3px black;
+    z-index: 999;
+  }
+
+  .fa-whatsapp{
+    font-size: 60px;
+  }
+
+  .float:hover{
+    background-color: #28e76e;
+  }
