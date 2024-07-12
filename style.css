@@ -27,6 +27,15 @@
       font-style: normal;
     }
 
+    #testimonios img{
+      width: 60%;
+      height: 360px;
+    }
+
+    #testimonios .boton{
+      padding: 50px 0 0 0;
+    }
+
     /* navbar */
     .navbar {
       background-color: #783AC1;
@@ -53,7 +62,7 @@
 
     .title {
       text-align: center;
-      color: white;
+      color: yellow;
       padding-top: 10%;
       font-family: "Yantramanav", sans-serif;
       font-weight: 700;
@@ -62,7 +71,7 @@
 
     .description {
       text-align: center;
-      color: whitesmoke;
+      color: yellow;
       padding-top: 2%;
       font-family: "Yantramanav", sans-serif;
       font-weight: 400;
@@ -173,21 +182,12 @@
       padding: 50px 0 0 0;
       margin-bottom: 80px;
       background-color: #AEE5DF;
-      font-family: "Yantramanav", sans-serif;
-      font-weight: 500;
-      font-style: normal;
     }
 
     .banner h2 {
       font-size: 40px;
       text-transform: uppercase;
       font-weight: 900;
-    }
-
-    .contact{
-      font-family: "Yantramanav", sans-serif;
-      font-weight: 700;
-      font-style: normal;
     }
 
     /* responsive */
@@ -317,5 +317,6 @@
     .float:hover {
       background-color: #28e76e;
     }
+/* Contacto */
 
     /*Footer*/
