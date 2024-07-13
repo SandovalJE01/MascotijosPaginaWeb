@@ -1,0 +1,348 @@
+body {
+  background-color: #fff;
+}
+
+/* navbar */
+.navbar {
+  background-color: #783AC1;
+}
+
+.navbar a {
+  font-weight: 600;
+  font-size: 20px;
+  color: yellow;
+  font-family: "Righteous", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* imagen de inicio */
+.background-img {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)), url(/img/carruselMascotijos.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 114vh;
+  margin-top: 56px;
+}
+
+.title {
+  text-align: center;
+  color: yellow;
+  padding-top: 10%;
+  font-family: "Concert One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.description {
+  text-align: center;
+  color: yellow;
+  padding-top: 2%;
+  font-family: "Concert One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#nosotros {
+  padding: 80px 0 0 0;
+  font-family: "Righteous", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+  .box {
+    background-color: #783AC1;
+    padding-top: 4%;
+    padding-bottom: 4%;
+  }
+
+  .text {
+    background-color: #783AC1;
+    align-self: start;
+    color: yellow;
+    font-size: 20px;
+    font-family: "Righteous", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+}
+
+/* PRODUCTOS */
+#productos {
+  padding: 80px 0 0 0;
+  font-family: "Righteous", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* cards STYLES*/
+.card {
+  background-color: #783AC1;
+  align-items: center;
+}
+
+.card-title {
+  text-align: center;
+  color: yellow;
+}
+
+.card-text {
+  text-align: center;
+  color: white;
+}
+
+.card img {
+  padding: 15px 0 0 0;
+  width: 150px;
+  height: 150px;
+}
+
+/* carrusel de marcas */
+.body-scroll {
+  display: grid;
+  min-block-size: 50vh;
+  place-content: center;
+  padding: 80px 0 0 0;
+  font-family: "Righteous", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.scroller {
+  padding: 0px 0 0 0;
+}
+
+.scroller img {
+  width: 10vw;
+  height: auto;
+  margin: auto;
+  overflow: hidden;
+}
+
+.scroller__inner {
+  padding-block: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.scroller[data-animated="true"] {
+  overflow: hidden;
+  -webkit-mask: linear-gradient(90deg,
+      transparent,
+      white 20%,
+      white 80%,
+      transparent);
+  mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+}
+
+.scroller[data-animated="true"] .scroller__inner {
+  width: max-content;
+  flex-wrap: nowrap;
+  animation: scroll var(--_animation-duration, 40s) var(--_animation-direction, forwards) linear infinite;
+}
+
+.scroller[data-direction="right"] {
+  --_animation-direction: reverse;
+}
+
+.scroller[data-speed="fast"] {
+  --_animation-duration: 20s;
+}
+
+@keyframes scroll {
+  to {
+    transform: translate(calc(-50% - 0.5rem));
+  }
+}
+
+/*section-icons */
+.section-icons {
+  padding: 80px 0 0 0;
+  font-family: "Righteous", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.box-icons i {
+  font-size: 40px;
+}
+
+.box-icons h3 {
+  font-size: 20px;
+  font-weight: 800;
+}
+
+/* clientes y mascotijos */
+.testimonios {
+  padding: 80px 0;
+  font-family: "Righteous", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#testimonios {
+  padding: 50px 0;
+  font-family: "Righteous", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#testimonios img {
+  width: 60%;
+  height: 360px;
+}
+
+#testimonios .boton {
+  padding: 50px 0 0 0;
+}
+
+/* banner */
+.banner {
+  align-items: center;
+  text-align: center;
+  padding: 50px 0 0 0;
+  margin-bottom: 100px;
+  background-color: #cfb7d4;
+}
+
+.banner h2 {
+  padding-bottom: 50px;
+  font-size: 40px;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+/* Contacto */
+.contact {
+  font-family: "Righteous", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/*Footer*/
+
+/* responsive */
+/* celulares */
+@media (min-width: 320px) and (max-width:1020px) {
+  .background-img {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)), url(/img/carruselMascotijos.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 320px;
+    margin-top: 56px;
+  }
+
+  .title {
+    font-size: 20px;
+  }
+
+  .description {
+    font-size: 16px;
+  }
+
+  .body-scroll {
+    min-height: 100px;
+  }
+
+  .body-scroll img {
+    height: 30px;
+    width: auto;
+  }
+}
+
+/* tablets */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .background-img {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)), url(/img/carruselMascotijos.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    margin-top: 56px;
+  }
+}
+
+/* iPad Pro*/
+@media (min-width: 1024px) and (max-width: 1366px) {
+  .background-img {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)), url(/img/carruselMascotijos.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 610px;
+    margin-top: 56px;
+  }
+}
+
+/* zenbook fold*/
+@media (min-width: 853px) and (max-width: 1280px) {
+  .background-img {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)), url(/img/carruselMascotijos.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 800px;
+    margin-top: 56px;
+  }
+
+  .title {
+    font-size: 50px;
+  }
+
+  .description {
+    font-size: 30px;
+  }
+}
+
+/* Estilos del scrollbar*/
+body {
+  --sb-track-color: #232E33;
+  --sb-thumb-color: #eedc13;
+  --sb-size: 15px;
+}
+
+body::-webkit-scrollbar {
+  width: var(--sb-size)
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--sb-track-color);
+  border-radius: 1px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--sb-thumb-color);
+  border-radius: 1px;
+  border: 1px solid #cc01ff;
+}
+
+@supports not selector(::-webkit-scrollbar) {
+  body {
+    scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
+  }
+}
+
+/* boton flotante de whatsapp */
+.float {
+  position: fixed;
+  width: 58px;
+  height: 58px;
+  background-color: #25d366;
+  bottom: 40px;
+  right: 40px;
+  color: #fff;
+  border-radius: 12%;
+  text-align: center;
+  box-shadow: 2px 2px 3px black;
+  z-index: 999;
+}
+
+.fa-whatsapp {
+  font-size: 60px;
+}
+
+.float:hover {
+  background-color: #28e76e;
+}
