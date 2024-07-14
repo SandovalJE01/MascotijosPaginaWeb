@@ -1,7 +1,9 @@
 body {
   background-color: #fff;
 }
-
+a{
+  text-align: center;
+}
 /* navbar */
 .navbar {
   background-color: #783AC1;
@@ -49,22 +51,22 @@ body {
   font-family: "Righteous", sans-serif;
   font-weight: 400;
   font-style: normal;
+}
 
-  .box {
-    background-color: #783AC1;
-    padding-top: 4%;
-    padding-bottom: 4%;
-  }
+.box {
+  background-color: #783AC1;
+  padding-top: 4%;
+  padding-bottom: 4%;
+}
 
-  .text {
-    background-color: #783AC1;
-    align-self: start;
-    color: yellow;
-    font-size: 20px;
-    font-family: "Righteous", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  }
+.text {
+  background-color: #783AC1;
+  align-self: start;
+  color: yellow;
+  font-size: 20px;
+  font-family: "Righteous", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 /* PRODUCTOS */
@@ -128,12 +130,8 @@ body {
 
 .scroller[data-animated="true"] {
   overflow: hidden;
-  -webkit-mask: linear-gradient(90deg,
-      transparent,
-      white 20%,
-      white 80%,
-      transparent);
-  mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+  -webkit-mask: linear-gradient(90deg ,transparent ,white 20%,white 80%, transparent);
+   mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
 }
 
 .scroller[data-animated="true"] .scroller__inner {
